@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  MarvelProject
+//
+//  Created by Sebastian Gomez Osorio on 24/01/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PUBLIC_API_KEY = fa04b760339fa1618917182290cbcb9c
+PRIVATE_API_KEY = 58ac225a6b49a11201eddd796372ced400f20a0b

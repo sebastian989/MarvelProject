@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="112" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="MarvelProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="558" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="set-w3-ObR">
+                        <rect key="frame" x="16" y="8" width="526" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCN-tM-sLP">
+                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aCN-tM-sLP" secondAttribute="height" multiplier="1:1" id="LcR-Mq-DIb"/>
+                                    <constraint firstAttribute="height" constant="80" id="Z9m-3V-Rzj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcu-xk-ZKh">
+                                <rect key="frame" x="104" y="8" width="414" height="23"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm4-4Y-VGt">
+                                <rect key="frame" x="104" y="39" width="414" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wm4-4Y-VGt" firstAttribute="leading" secondItem="wcu-xk-ZKh" secondAttribute="leading" id="2Mb-RH-mfY"/>
+                            <constraint firstItem="Wm4-4Y-VGt" firstAttribute="top" secondItem="wcu-xk-ZKh" secondAttribute="bottom" constant="8" symbolic="YES" id="LHE-G4-yDD"/>
+                            <constraint firstItem="wcu-xk-ZKh" firstAttribute="top" secondItem="aCN-tM-sLP" secondAttribute="top" id="Ph5-vj-LUh"/>
+                            <constraint firstItem="aCN-tM-sLP" firstAttribute="leading" secondItem="set-w3-ObR" secondAttribute="leading" constant="8" id="STJ-YY-wJC"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wm4-4Y-VGt" secondAttribute="bottom" constant="8" id="Z5d-o3-Zdf"/>
+                            <constraint firstAttribute="bottom" secondItem="aCN-tM-sLP" secondAttribute="bottom" constant="8" id="lnN-Xp-9jS"/>
+                            <constraint firstAttribute="trailing" secondItem="wcu-xk-ZKh" secondAttribute="trailing" constant="8" id="nj1-EA-IzI"/>
+                            <constraint firstItem="wcu-xk-ZKh" firstAttribute="leading" secondItem="aCN-tM-sLP" secondAttribute="trailing" constant="16" id="xTp-Tr-ror"/>
+                            <constraint firstItem="aCN-tM-sLP" firstAttribute="top" secondItem="set-w3-ObR" secondAttribute="top" constant="8" id="xfu-vP-fKg"/>
+                            <constraint firstItem="Wm4-4Y-VGt" firstAttribute="trailing" secondItem="wcu-xk-ZKh" secondAttribute="trailing" id="yLs-DZ-aQ7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="set-w3-ObR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="76M-yG-ln7"/>
+                    <constraint firstAttribute="trailing" secondItem="set-w3-ObR" secondAttribute="trailing" constant="16" id="UtL-Rq-Xgp"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="set-w3-ObR" secondAttribute="bottom" constant="8" id="WOk-rF-Wl9"/>
+                    <constraint firstItem="set-w3-ObR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tgH-Q3-IVa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="set-w3-ObR" id="fAk-A7-jcO"/>
+                <outlet property="descriptionLabel" destination="Wm4-4Y-VGt" id="Ysb-yj-cSX"/>
+                <outlet property="nameLabel" destination="wcu-xk-ZKh" id="Mw7-7h-kPk"/>
+                <outlet property="thumbnailImageView" destination="aCN-tM-sLP" id="lOD-bD-kba"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="68.303571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
